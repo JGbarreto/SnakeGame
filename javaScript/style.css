@@ -1,0 +1,25 @@
+body {
+font-family: 'Poppins';
+}
+.placar {
+    width: 25%;
+}
+
+.configuracoes {
+    width: 25%;
+}
+.jogo {
+display: flex;
+justify-content: space-evenly;
+}
+.container{
+    width: 90vw;
+    margin: auto;
+}
+
+.titulo {
+    text-align: center;
+    
+}
+
+

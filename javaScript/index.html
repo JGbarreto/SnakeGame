@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Snake Game</title>
 </head>
+
 <body>
-    <h1>Snake Game</h1>
-    <canvas id="stage" width="400" height="400"></canvas>
+    <div class="container">
+        <h1 class="titulo">Snake Game</h1>
+        <div class="jogo">
+            <div class="placar">
+              <span class="pontuacao" id="pontuacao"></span>   
+            </div>
+            <canvas class="stage" id="stage" width="400" height="400"></canvas>
+            <div class="configuracoes"></div>
+        </div>
+        
+    </div>
 </body>
+
 </html>
-<script src="script.js" ></script>
+<script src="script.js"></script>

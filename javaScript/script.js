@@ -2,6 +2,7 @@ window.onload = function () {
 
     var stage = document.getElementById('stage');
     var ctx = stage.getContext("2d")
+    
     document.addEventListener("keydown", keyPush)
     setInterval(game, 60);
 
@@ -21,6 +22,7 @@ window.onload = function () {
 
 
     function game() {
+        
         posicaoX += velocidadeX;
         posicaoY += velocidadeY;
         if (posicaoX < 0) {
@@ -62,6 +64,7 @@ window.onload = function () {
 
         if (appleX == posicaoX && appleY == posicaoY) {
             tail++;
+            
             appleX = Math.floor(Math.random() * qtdPixel);
             appleY = Math.floor(Math.random() * qtdPixel);
         }
@@ -100,4 +103,19 @@ window.onload = function () {
 
         }
     }
+
+    /*function criaPlacar() {
+        const placar = {
+            pontuacao: 0,
+            desenha(){
+                ctx.font= '40px "Poppins"';
+                ctx.fillStyle = 'white';
+                ctx.fillText(`Pontuação: ${placar.pontuacao}`, 50,90)
+            }, 
+            atualiza() {
+                this.pontuacao++;
+            }
+
+        }
+    }*/
 }
